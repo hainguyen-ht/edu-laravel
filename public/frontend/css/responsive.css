@@ -1,0 +1,138 @@
+/* PC */
+/* NOT PC */
+@media (max-width: 1023px){
+    .category{
+        display: none;
+    }
+    .main{
+        width: 100%;
+    }
+    .section__main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section__main .col-3{
+        width: 100%;
+    }
+    .hMobile{
+        display: none;
+    }
+    .nav__menu{
+        display: block;
+        color: white;
+    }
+    .menu__more{
+        background-color: rgba(0,0,0,.3);
+        z-index: 2;
+        /* display: inline-block; */
+    }
+    .detail__main .container__course{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .course__detail,
+    .course__info{
+        width: 100%;
+    }
+    .course__info__main{
+        position: relative;
+    }
+    
+    a.fixed__fullw{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        border-radius: 0px;
+        border: 10px oldlace solid;
+    }
+    .section__item{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 100%
+    }
+}
+/* IPAD PRO */
+@media (min-width: 1024px) and (max-width: 1239px){
+    .course__item__content-members{
+        display: none;
+    }
+}
+/* IPAD */
+@media (min-width: 740px) and (max-width: 1023px){
+    /*   */
+    .header .m-w,
+    .container .m-w{
+        max-width: 666px;
+
+    }
+    .header .m-w{
+        left: 50%;
+    }
+    .course__list .col-4{
+        width: 50%;
+    }
+
+    footer{
+        padding-top: 50px;
+    }
+    footer .footer{
+        padding: 0 30px;
+    }
+
+    .footer .footer__col-1,
+    .footer .footer__col-2,
+    .footer .footer__col-3,
+    .footer .footer__col-4,
+    .footer .footer__col-5{
+        margin-top: 30px;
+    }
+    .footer .footer__col-1{
+        width: 50%;
+    }
+    .footer .footer__col-2,
+    .footer .footer__col-3{
+        width: 25%;
+    }
+    .footer .footer__col-4,
+    .footer .footer__col-5{
+        width: 50%;
+    }
+    
+     
+    
+}
+/* IPHONE X */
+@media (min-width: 0px) and (max-width: 739px){
+    .course__item__content-btn a{
+        padding: 8px 20px;
+    }
+    .course__list .col-4{
+        width: 100%;
+    }
+    .footer .footer__col-1,
+    .footer .footer__col-2,
+    .footer .footer__col-3,
+    .footer .footer__col-4,
+    .footer .footer__col-5{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .footer__col__list{
+        margin-bottom: 20px;
+    }
+    .form__footer-submit{
+        margin-top: 10px;
+    }
+    .form__footer-submit .btn{
+        width: 100%;
+    }
+    .menu__mobile{
+        width: 100%;
+    }
+    .course__qa li{
+        width: 100%;
+    }
+}

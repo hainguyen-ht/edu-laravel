@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: system-ui;
+}
+html{
+    line-height: 1.15;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-24{
+    margin-top: 24px;
+}
+:root{
+    --text-light: #636d77;
+    --button-color: #009090;
+    --border-light: #cccc;
+    --color-hover: #1dbfaf;
+}
+.auth__header{
+    height: 96px;
+    width: 100%;
+    min-width: 240px;
+    border-bottom: 1px solid var(--border-light);
+    box-shadow: 1px 1px 5px var(--border-light);   
+    position: relative;
+}
+.auth__header__content{
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.auth__header__content img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.auth__container{
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.auth__container__box{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    width: 100%;
+}
+.auth__container__form{
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(51,62,73,.1);
+    
+    padding: 24px;
+}
+.auth__container__form-form__heading{
+    font-size: 22px;
+    margin: 8px 0 24px 0;
+    font-weight: normal;
+}
+.auth__container__form-form_subheading{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-light);
+}
+/* LOGIN */
+.heading__login{
+    margin: 14px 0 0 0;
+}
+.heading__login .btn{
+    width: 100%;
+    margin: 8px 0;
+    height: 40px;
+    border: 1px solid #b3b3b3;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fff;
+    outline: none;
+}
+.heading__login .btn .text-btn{
+    font-weight: 600;
+}
+.fa-facebook-square{
+    color: blue;
+}
+.fa-google{
+    color: red;
+}
+.heading__login .btn:hover{
+    background-color: #ebebeb;
+    border-color: var(--button-color);
+}
+.auth__container__form-form_subheading-or{
+    font-weight: bold;
+    border-bottom: 1px solid var(--border-light);
+    position: relative;
+}
+.or-heading{
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+    padding: 0 10px;
+    display: inline-block;
+    background: #fff;
+}
+.form__login{
+    display: flex;
+    flex-direction: column;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    position: relative;
+}
+.form-group .form-label{
+    padding-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.form-group .form-label,
+.form-group .form-message{
+    text-align: left;
+}
+.form-group .form-message{
+    font-size: 12px;
+    color:red;
+    padding-top: 4px;
+}
+.form-group .form-input{
+    height: 40px;
+    border-radius: 4px ;
+    outline: none;
+    border: 1px solid #b3b3b3;
+    padding: 8px 12px;
+}
+.password-hide{
+    color: var(--button-color);
+    cursor: pointer;
+    position: absolute;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    right: 5px;
+    top: 43px;
+    transform: translateY(-50%);
+}
+.password-hide:hover{
+    color: var(--color-hover);
+}
+.form__login .btn-login{
+    background-color: var(--color-hover);
+    color: #fff;
+    border: none;
+}
+.form__login .btn-login:hover{
+    background-color: var(--button-color);
+}
+.fogot__pass,
+.fogot__pass>a{
+    font-size: 14px;
+    color: var(--text-light);
+}
+.auth__container__help{
+    margin: 20px 0 24px 0;
+    font-size: 14px;
+    color: var(--text-light);
+    padding: 14px 0;
+}
+.auth__container__help .text-relog{
+    color:  var(--color-hover);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.auth__container__help .text-relog:hover{
+    text-decoration: underline;
+}
+/* REGISTER */
+.box__group{
+    display: flex;
+    flex-direction: row;
+}
+.box__group__item-ticker{
+    padding-top: 2px;
+}
+.box__group__item-ticker input{
+    width: 15px;
+    height: 15px;    
+}
+.box__group__item-text{
+    font-size: 14px;
+    margin: 0 12px;
+    text-align: left;
+    line-height: 1.6;
+}
+/* RESET PASS */
+.rs__text-login .text-relog{
+    color: var(--color-hover);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.rs__text-login .text-relog:hover{
+    text-decoration: underline;
+}
+::placeholder{
+    color: #BAC4D5;
+}
+/* COURSES */

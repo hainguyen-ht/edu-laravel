@@ -1,0 +1,287 @@
+.header__content__nav-list,
+.header__content__auth-list{
+    margin-bottom: 0px;
+}
+a{
+    text-decoration: none!important;
+}
+.logo-link img{
+    vertical-align: unset;
+}
+.profile__content{
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+    background: #F7F8FC;
+}
+.side__bar{
+    width: 25%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    background: white;
+    height: 315px;
+}
+.form__info{
+    padding: 25px 0;
+    width: 65%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    background: white;
+}
+.side__bar-info{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.side__bar-info img{
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+}
+.h__info{
+    display: flex;
+    flex-direction: column;
+}
+.h__info-coin{
+    padding: 0 5px;
+    background: gray;
+    width: fit-content;
+    font-size: 14px;
+    color: white;
+    font-width: 600;
+    margin-top: 5px;
+}
+.side__bar-menu{
+    margin: 40px 0;
+}
+.side__bar-menu a{
+    display: block;
+}
+.info__control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d0e8e7;
+    padding-bottom: 10px;
+}
+.info__control-update{
+    margin-right: 20px;
+}
+.btn-update{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #6d6d6d;
+}
+.form__content{
+    margin-top: 40px;
+    padding: 0 20px;
+}
+.form__content-list{
+    list-style-type: none;
+}
+.f_item{
+    display: flex;
+    margin: 20px;
+}
+.f_item span{
+    width: 50%;
+    font-size: 17px;
+    font-weight: 500;
+}
+.f_item span:last-child{
+    font-weight: 500;
+    color: #a0adaf;
+}
+.form__content .form__content-title{
+    color: #23b1a4;
+    border-bottom: 1px solid #cac6c6;
+    padding-bottom: 6px;
+}
+.form__content .table{
+    font-size: 14px;
+}
+.courses__item td{
+    vertical-align: middle;
+    padding: 2px 10px;
+}
+#course_status{
+    height: auto;
+    width: 120px;
+    padding: 8px 10px;
+}
+.ratings {
+    list-style-type: none;
+    width: 100%;
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    display: flex;
+}
+
+.star {
+    position: relative;
+    line-height: 30px;
+    display: inline-block;
+    transition: color 0.2s ease;
+    color: #ebebeb;
+}
+
+.star:before {
+    content: '\2605';
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+}
+
+.star:hover,
+.star.selected,
+.star:hover ~ .star,
+.star.selected ~ .star{
+    transition: color 0.8s ease;
+    color: black;
+}
+.action__rating{
+    padding: 2px 5px;
+    background: #FFB11B;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+}
+/*Đổi mật khẩu*/
+
+.form__changepass{
+    margin-top: 40px;
+    position: relative;
+}
+.form__changepass .form-group{
+    display: flex;
+    align-items: center;
+}
+.form__changepass label{
+    margin-bottom: 3px;
+    width: 23%;
+    font-size: 16px;
+    font-weight: 600;
+}
+.form__update label{
+    margin-bottom: 3px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.form__changepass input{
+    width: 40%;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+}
+.form__changepass input:hover,
+.form__changepass input:focus,
+.form__update input:hover,
+.form__update input:focus{
+    border-color: #1dbfaf;
+}
+.form__changepass small{
+    width: 35%;
+    padding-left: 10px;
+}
+.group__btn{
+    padding-left: 20%;
+}
+.group__btn .btn{
+    padding: 5px 20px;
+    font-size: 18px;
+
+}
+.btn-change-pass{
+    margin-right: 10px;
+}
+/*nạp tiền*/
+.bank-center{
+    margin: 40px auto;
+    max-width: 500px;
+}
+.bank-content-center {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgb(0 0 0 / 8%);
+    border-radius: 10px;
+    padding: 25px;
+}
+.bank-content-head {
+    justify-content: center;
+    display: flex;
+}
+.bank-center .bank-content-head h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #00baba;
+}
+.bank-center p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #003333;
+    margin-top: 10px;
+}
+.bank-center p span {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #007D7D;
+}
+.text-note{
+    font-size: 17px;
+}
+/*cập nhật*/
+.avt-user{
+    display: block;
+    margin: 10px auto;
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    display: block;
+}
+.inputfile + label {
+    display: block;
+    width: 184px;
+    margin: 10px auto;
+    padding: 5px 5px;
+    background: #FFFFFF;
+    border: 0.3px solid #969696;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #555555;
+}
+.main__update{
+    margin-top: 20px;
+}
+.form__update .form-group{
+    margin-bottom: unset;
+}
+.form__update input{
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+    width: 80%;
+}
+.group__btn-update{
+    margin: 30px auto 10px auto;
+    padding-left: unset;
+}

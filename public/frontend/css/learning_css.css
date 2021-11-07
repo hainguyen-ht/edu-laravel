@@ -1,0 +1,129 @@
+.main-learning{
+    padding-top: 50px;
+    height: 2000px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+#tongquan{
+    padding-top: 50px
+}
+#tongquan .comment__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#tongquan .comment__header .social{
+    display: flex;
+    align-items: center;
+    width: 160px;
+    justify-content: space-between;
+}
+#tongquan .comment__header .social li:first-child{
+    font-size: 17px;
+}
+.comment__header .social .fb i{
+    color: #4080ff;
+}
+.comment__header .social .fb i:hover,
+.comment__header .social .email i:hover,
+.comment__header .social .link i:hover{
+    font-size: 25px;
+}
+.comment__header .social .email i{
+    color: #f05123;
+}
+.comment__header .social .link i{
+    color: gray;
+}
+.post__comment .user_comment{
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+.post__comment{
+    margin-top: 20px;
+}
+.user_comment img,
+.comment img{
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+}
+.comment__control{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.comment__control .form__comment{
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid #b3b3b3;
+    outline: none;
+    font-size: 19px;
+    padding-left: 8px;
+}
+.comment__control .form__comment:focus,
+.comment__control .form__comment:hover{
+    border: none;
+    border-bottom: 1px solid #1dbfaf;
+}
+.comment__item{
+    height: 80%;
+}
+.action__comment:hover{
+    background: #3ab0c3;
+}
+.action__comment{
+    padding: 0 25px;
+    background: grey;
+    cursor: pointer;
+    color: white;
+    margin-left: 15px;
+    border: none;
+}
+.all__comment{
+    margin-top: 20px;
+}
+.comment{
+    display: flex;
+    margin-bottom: 20px;
+}
+.comment .container__comment{
+    max-width: 80%;
+    min-width: 25%;
+}
+.container__comment .container__comment-content{
+    background: #f2f3f5;
+    padding: 10px 12px;
+    border-radius: 18px;
+}
+.container__comment .container__comment-content .cm_name{
+    font-size: 19px;
+}
+.container__comment .container__comment-content .cm_content{
+    font-size: 17px;
+}
+.container__comment-control{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    padding-left: 12px;
+}
+.container__comment-control .cm_like:hover,
+.container__comment-control .cm_reply:hover{
+    text-decoration: underline;
+}
+.cm_like,
+.cm_reply{
+    cursor: pointer;
+}
+.active__control{
+    color: #0F7AFF;
+}
