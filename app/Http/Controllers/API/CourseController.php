@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Imports\CourseImport;
+use App\Exports\CourseExport;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Repositories\Admin\VideoRepository;
@@ -134,6 +135,22 @@ class CourseController extends Controller
             return response()->json([
                 'status' => 0,
                 'message' => 'import error'
+            ]);
+        }
+    }
+    public function exportCsv(Request $request){
+        try{
+            Excel::download(new CourseExport($request->limit, $request->start), 'export.xlsx');
+            return response()->json([
+                'status' => 1,
+                'message' => 'success'
+            ]);
+
+        }catch (\Exception $exception){
+            Log::error('error export ---- '. $exception->getMessage());
+            return response()->json([
+                'status' => 0,
+                'message' => 'export error'
             ]);
         }
     }

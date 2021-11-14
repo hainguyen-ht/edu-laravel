@@ -85,6 +85,8 @@ Route::group(['prefix' => 'ajax'], function() {
     Route::post('user/recharge',[AuthController::class,'recharge'])->name('ajax.user.recharge');
     //import
     Route::post('course/import', [CourseController::class,'importCsv'])->name('ajax.course.import');
+    //export
+    Route::post('course/export', [CourseController::class,'exportCsv'])->name('ajax.course.export');
 });
 
 
